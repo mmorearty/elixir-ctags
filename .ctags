@@ -1,0 +1,12 @@
+--langdef=Elixir
+--langmap=Elixir:.ex.exs
+--regex-Elixir=/^[ \t]*def(p?)[ \t]+([a-zA-Z0-9_]+\.)*([a-zA-Z0-9_?!]+)/\3/d,definitions,definitions (def ...)/
+--regex-Elixir=/^[ \t]*defcallback[ \t]+([a-zA-Z0-9_?!]+)/\1/c,callbacks,callbacks (defcallback ...)/
+--regex-Elixir=/^[ \t]*defdelegate[ \t]+([a-zA-Z0-9_?!]+)/\1/g,delegates,delegates (defdelegate ...)/
+--regex-Elixir=/^[ \t]*defexception[ \t]+([a-zA-Z0-9_]+\.)*([a-zA-Z0-9_?!]+)/\2/e,exceptions,exceptions (defexception ...)/
+--regex-Elixir=/^[ \t]*defimpl[ \t]+([a-zA-Z0-9_]+\.)*([a-zA-Z0-9_?!]+)/\2/i,implementations,implementations (defimpl ...)/
+--regex-Elixir=/^[ \t]*defmacro(p?)[ \t]+([a-zA-Z0-9_?!]+)\(/\2/a,macros,macros (defmacro ...)/
+--regex-Elixir=/^[ \t]*defmacro(p?)[ \t]+([a-zA-Z0-9_?!]+)?[ \t]+([^ \tA-Za-z0-9_]+)[ \t]*[a-zA-Z0-9_!?!]/\3/o,operators,operators (e.g. "defmacro a <<< b")/
+--regex-Elixir=/^[ \t]*defmodule[ \t]+([a-zA-Z0-9_]+\.)*([a-zA-Z0-9_?!]+)/\2/m,modules,modules (defmodule ...)/
+--regex-Elixir=/^[ \t]*defprotocol[ \t]+([a-zA-Z0-9_]+\.)*([a-zA-Z0-9_?!]+)/\2/p,protocols,protocols (defprotocol...)/
+--regex-Elixir=/^[ \t]*defrecord(p?)[ \t]+([a-zA-Z0-9_]+\.)*([a-zA-Z0-9_?!]+)/\3/r,records,records (defrecord...)/
