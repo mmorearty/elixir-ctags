@@ -1,8 +1,8 @@
 --langdef=Elixir
 --langmap=Elixir:.ex.exs
---regex-Elixir=/^[ \t]*def(p?)[ \t]+([a-zA-Z0-9_]+\.)*([a-zA-Z0-9_?!]+)/\3/d,definitions,definitions (def ...)/
+--regex-Elixir=/^[ \t]*def(p?)[ \t]+([a-zA-Z0-9_]+\.)*([a-zA-Z0-9_?!]+)/\3/f,functions,functions (def ...)/
 --regex-Elixir=/^[ \t]*defcallback[ \t]+([a-zA-Z0-9_?!]+)/\1/c,callbacks,callbacks (defcallback ...)/
---regex-Elixir=/^[ \t]*defdelegate[ \t]+([a-zA-Z0-9_?!]+)/\1/g,delegates,delegates (defdelegate ...)/
+--regex-Elixir=/^[ \t]*defdelegate[ \t]+([a-zA-Z0-9_?!]+)/\1/d,delegates,delegates (defdelegate ...)/
 --regex-Elixir=/^[ \t]*defexception[ \t]+([a-zA-Z0-9_]+\.)*([a-zA-Z0-9_?!]+)/\2/e,exceptions,exceptions (defexception ...)/
 --regex-Elixir=/^[ \t]*defimpl[ \t]+([a-zA-Z0-9_]+\.)*([a-zA-Z0-9_?!]+)/\2/i,implementations,implementations (defimpl ...)/
 --regex-Elixir=/^[ \t]*defmacro(p?)[ \t]+([a-zA-Z0-9_?!]+)\(/\2/a,macros,macros (defmacro ...)/
