@@ -30,6 +30,16 @@ It has parsers for lots of programming languages, and it generates a
 simple `tags` file that any editor can read in order to find the file and
 line where a given symbol is defined.
 
+The original Ctags supported only C (I think).  Exuberant Ctags is a rewrite
+that supports many more languages.
+
+**Install Exuberant Ctags**
+
+If you don't already have Exuberant Ctags, [install it](http://ctags.sourceforge.net/).
+On OSX, the best way is using [brew](http://mxcl.github.com/homebrew/):
+
+    $ brew install ctags
+
 **Vim**
 
 If you are using the [vim](http://www.vim.org/) editor:
