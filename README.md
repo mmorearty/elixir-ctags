@@ -22,7 +22,13 @@ ctags command line: cd into your project, and then
 What is this Exuberant Ctags thing and how do I use it?
 -------------------------------------------------------
 
-Well, that's a separate topic, really.  But here's a quick start:
+Well, that's a separate topic, really.  But here's a quick start.
+
+Ctags is a tool to make it easier to implement "go to definition" in lots
+of different text editors and for lots of different programming languages.
+It has parsers for lots of programming languages, and it generates a
+simple `tags` file that any editor can read in order to find the file and
+line where a given symbol is defined.
 
 **Vim**
 
