@@ -39,6 +39,10 @@ If you don't already have Exuberant Ctags, [install it](http://ctags.sourceforge
 On OSX, the best way is using [brew](http://mxcl.github.com/homebrew/):
 
     $ brew install ctags
+    
+On Windows, the best way is using [chocolatey](https://chocolatey.org/):
+
+    choco install ctags
 
 **Vim**
 
