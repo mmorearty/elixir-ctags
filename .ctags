@@ -1,7 +1,7 @@
 --langdef=Elixir
 --langmap=Elixir:.ex.exs
 --regex-Elixir=/^[ \t]*def(p?)[ \t]+([a-z_][a-zA-Z0-9_?!]*)/\2/f,function,functions (def ...)/
---regex-Elixir=/^[ \t]*defcallback[ \t]+([a-z_][a-zA-Z0-9_?!]*)/\1/c,callback,callbacks (defcallback ...)/
+--regex-Elixir=/^[ \t]*(@|def)callback[ \t]+([a-z_][a-zA-Z0-9_?!]*)/\2/c,callback,callbacks (@callback ...)/
 --regex-Elixir=/^[ \t]*defdelegate[ \t]+([a-z_][a-zA-Z0-9_?!]*)/\1/d,delegate,delegates (defdelegate ...)/
 --regex-Elixir=/^[ \t]*defexception[ \t]+([A-Z][a-zA-Z0-9_]*\.)*([A-Z][a-zA-Z0-9_?!]*)/\2/e,exception,exceptions (defexception ...)/
 --regex-Elixir=/^[ \t]*defimpl[ \t]+([A-Z][a-zA-Z0-9_]*\.)*([A-Z][a-zA-Z0-9_?!]*)/\2/i,implementation,implementations (defimpl ...)/
