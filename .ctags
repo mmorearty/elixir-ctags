@@ -7,7 +7,11 @@
 --regex-Elixir=/^[ \t]*defguard(p?)[ \t]+(is_[a-zA-Z0-9_?!]+)/\2/g,guard,guards (defguard ...)/
 --regex-Elixir=/^[ \t]*defimpl[ \t]+([A-Z][a-zA-Z0-9_]*\.)*([A-Z][a-zA-Z0-9_?!]*)/\2/i,implementation,implementations (defimpl ...)/
 --regex-Elixir=/^[ \t]*defmacro(p?)[ \t]+([a-z_][a-zA-Z0-9_?!]*)(.[^\|\^\/&<>~.=!*+-]+)/\2/a,macro,macros (defmacro ...)/
---regex-Elixir=/^[ \t]*defmacro(p?)[ \t]+([a-zA-Z0-9_?!]+)?[ \t]+([^ \tA-Za-z0-9_]+)[ \t]*[a-zA-Z0-9_!?!]/\3/o,operator,operators (e.g. "defmacro a <<< b")/
+
+# These are the operators (which can be defined with def(p) and defmacro(p))
+--regex-Elixir=/^[ \t]*def(p?)[ \t]+([a-zA-Z0-9_?!]+)[ \t]+([\|\^\/&<>~.=!*+-]{1,3})[ \t]+[a-zA-Z0-9_!?!]/\3/o,operator,operators (e.g. "def a <<< b")/
+--regex-Elixir=/^[ \t]*defmacro(p?)[ \t]+([a-zA-Z0-9_?!]+)[ \t]+([\|\^\/&<>~.=!*+-]{1,3})[ \t]+[a-zA-Z0-9_!?!]/\3/o,operator,operators (e.g. "defmacro a <<< b")/
+
 --regex-Elixir=/^[ \t]*defmodule[ \t]+([A-Z][a-zA-Z0-9_]*\.)*([A-Z][a-zA-Z0-9_?!]*)/\2/m,module,modules (defmodule ...)/
 --regex-Elixir=/^[ \t]*defprotocol[ \t]+([A-Z][a-zA-Z0-9_]*\.)*([A-Z][a-zA-Z0-9_?!]*)/\2/p,protocol,protocols (defprotocol...)/
 --regex-Elixir=/^[ \t]*Record\.defrecord(p?)[ \t(]+:([a-zA-Z0-9_]+)(\)?)/\2/r,record,records (defrecord...)/
