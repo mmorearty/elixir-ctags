@@ -9,5 +9,5 @@
 --regex-Elixir=/^[ \t]*defmacro(p?)[ \t]+([a-zA-Z0-9_?!]+)?[ \t]+([^ \tA-Za-z0-9_]+)[ \t]*[a-zA-Z0-9_!?!]/\3/o,operator,operators (e.g. "defmacro a <<< b")/
 --regex-Elixir=/^[ \t]*defmodule[ \t]+([A-Z][a-zA-Z0-9_]*\.)*([A-Z][a-zA-Z0-9_?!]*)/\2/m,module,modules (defmodule ...)/
 --regex-Elixir=/^[ \t]*defprotocol[ \t]+([A-Z][a-zA-Z0-9_]*\.)*([A-Z][a-zA-Z0-9_?!]*)/\2/p,protocol,protocols (defprotocol...)/
---regex-Elixir=/^[ \t]*Record\.defrecord[ \t]+:([a-zA-Z0-9_]+)/\1/r,record,records (defrecord...)/
---regex-Elixir=/^[ \t]*test[ \t]+\"([a-z_][a-zA-Z0-9_?! ]*)\"*/\1/t,test,tests (test ...)/
+--regex-Elixir=/^[ \t]*Record\.defrecord(p?)[ \t(]+:([a-zA-Z0-9_]+)(\)?)/\2/r,record,records (defrecord...)/
+--regex-Elixir=/^[ \t]*test[ \t(]+"([a-z_][a-zA-Z0-9_?! ]*)"*(\)?)/\1/t,test,tests (test ...)/
