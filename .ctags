@@ -4,6 +4,7 @@
 --regex-Elixir=/^[ \t]*(@|def)callback[ \t]+([a-z_][a-zA-Z0-9_?!]*)/\2/c,callback,callbacks (@callback ...)/
 --regex-Elixir=/^[ \t]*defdelegate[ \t]+([a-z_][a-zA-Z0-9_?!]*)/\1/d,delegate,delegates (defdelegate ...)/
 --regex-Elixir=/^[ \t]*defexception[ \t]+([A-Z][a-zA-Z0-9_]*\.)*([A-Z][a-zA-Z0-9_?!]*)/\2/e,exception,exceptions (defexception ...)/
+--regex-Elixir=/^[ \t]*defguard(p?)[ \t]+(is_[a-zA-Z0-9_?!]+)/\2/g,guard,guards (defguard ...)/
 --regex-Elixir=/^[ \t]*defimpl[ \t]+([A-Z][a-zA-Z0-9_]*\.)*([A-Z][a-zA-Z0-9_?!]*)/\2/i,implementation,implementations (defimpl ...)/
 --regex-Elixir=/^[ \t]*defmacro(p?)[ \t]+([a-z_][a-zA-Z0-9_?!]*)\(/\2/a,macro,macros (defmacro ...)/
 --regex-Elixir=/^[ \t]*defmacro(p?)[ \t]+([a-zA-Z0-9_?!]+)?[ \t]+([^ \tA-Za-z0-9_]+)[ \t]*[a-zA-Z0-9_!?!]/\3/o,operator,operators (e.g. "defmacro a <<< b")/
